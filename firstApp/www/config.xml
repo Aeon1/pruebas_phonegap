@@ -51,6 +51,32 @@
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
+	<!-- android -->
+	<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+	</feature>
+	<feature name="File">
+    <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+	</feature>
+	<feature name="Capture">
+    <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+	</feature>
+	<feature name="File">
+    <param name="android-package" value="org.apache.cordova.FileUtils" />
+	</feature>
+	<!--ios -->
+	<feature name="Camera">
+    <param name="ios-package" value="CDVCamera" />
+	</feature>
+	<feature name="Capture">
+    <param name="ios-package" value="CDVCapture" />
+	</feature>
+	<feature name="File">
+    <param name="ios-package" value="CDVFile" />
+	</feature>
+	<feature name="FileTransfer">
+    <param name="ios-package" value="CDVFileTransfer" />
+	</feature>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
